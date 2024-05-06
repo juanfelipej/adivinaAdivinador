@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+    color: white;
+    font-family: "averta", sans-serif;
+    padding: 0px 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    width: 80%;
+}
+
+.greenColor{
+    color: #70C032;
+}
+
+.lightfont{
+ font-weight: 300;
+}
+.extraLightfont{
+    font-weight: 100;
+   }
+
+.boldfont{
+ font-weight: 700;
+}
+h2{
+    font-size: 15vw;
+   line-height: 89%;
+}
+.textParrafo{
+    display: flex;
+    flex-direction: column;
+}
+
+.pParrafo{
+    font-size: 20px;
+}
+.sParrafo{
+    font-size: 22px;
+    line-height: 23px;
+}
+.tParrafo{
+    font-size: 36px;
+    line-height: 30px;
+}
+.cParrafo{
+    font-size: 40px;
+    line-height: 41px;
+}
+.qParrafo{
+    font-size: 35px;
+    line-height: 27px;
+}
+.apuestaConten{
+    border: 3px solid #70C032;
+    border-radius: 14px;
+    padding: 1vw;
+    width: 47vw;
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+
+}
+.contTodo{
+    display: flex;
+    flex-direction: column;
+}
+form{
+
+display: flex;
+
+flex-direction: column;
+
+align-content: center;
+
+align-items: center;
+}
+
+#apuesta{
+    background: #D9D9D9;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+input{
+    height: 25px;
+    border: none;
+    border-radius: 6px;
+    background: #D9D9D9;
+}
+#cbTratamiento{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-start;
+    font-size: 11px;
+    margin: 3vw;
+}
+button{
+    background: #70C032;
+     height: 4vh;
+    width: 24vw;
+    border:none;
+border-radius: 6px;
+    font-size:24px;
+    
+}

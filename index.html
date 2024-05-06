@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Adivinanza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+  <div class="contTodo">
+    <h2 class="greenColor lightfont"><strong class="reduceSpace">¡</strong>Adivina<strong>
+        Adivinador!</strong> </h2>
+
+    <div class="textParrafo">
+      <span class="pParrafo">Te apostamos a que no <strong class=""> adivinas </strong> qué </span>
+      <span class="sParrafo">tendremos  para ti en <strong class="greenColor"> Chipichape, </strong> </span>
+
+      <span class="tParrafo">si ganas recibirás un </span>
+      <span class="cParrafo"> Bono por <strong class="greenColor"> $20.000 </strong></span>
+      <span class="qParrafo"> usar en nuestro local.</span>
+
+
+    </div>
+    <form
+      action="https://script.google.com/macros/s/AKfycbzIYroI6rCr0IpleGKrMmf_ssIB7bMqY20_NA_BjoivxNVRYu-bp9dDhmW8ata4gKkczQ/exec"
+      method="post">
+
+      <div class="apuestaConten">
+        <label class="greenColor boldfont" for="apuesta">TU APUESTA:</label>
+      <p class="extraLightfont">Apuesto a que tendrán allí: </p>
+      <select name="apuesta" id="apuesta">
+        <option value="Restaurante">Restaurante</option>
+        <option value="Gimnasio">Gimnasio</option>
+        <option value="Almacén de Ropa">Almacén de Ropa</option>
+        <option value="Almacén de Variedades">Almacén de Variedades</option>
+        <option value="Centro de Entretenimiento">Centro de Entretenimiento</option>
+        <option value="Supermercado">Supermercado</option>
+        <!-- Agrega más opciones aquí -->
+      </select>
+      </div>
+
+      <p class="extraLightfont">Para poder pagar tu premio necesitamos saber quién eres y cómo contactarte.</p>
+      <label class="lightfont" for="nombre">Nombre y apellidos:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label class="lightfont" for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+      <label class="lightfont" for="celular">Número de celular:</label>
+      <input type="tel" id="celular" name="celular" required>
+      <label class="lightfont" for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" name="fecha" required>
+      <div id="cbTratamiento">
+        <input type="checkbox" id="autorizacion" name="autorizacion" required>
+        <label for="autorizacion">Autorizo a que mis datos se utilicen UNICAMENTE para contactarme y decirme si gané o no
+          en esta apuesta.</label>
+      </div>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+
+</html>
