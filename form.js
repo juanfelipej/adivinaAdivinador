@@ -8,7 +8,7 @@ form.addEventListener('submit', e => {
   .then(response => {
     if (response.ok) {
       alert("Thank you! Your form is submitted successfully.");
-      window.location.href = '/confirmacion.html'; // Redirige a la página de confirmación
+      window.location.href = 'https://juanfelipej.github.io/adivinaAdivinador/confirmacion.html'; // Redirige a la página de confirmación
     } else {
       throw new Error('Network response was not ok.');
     }
