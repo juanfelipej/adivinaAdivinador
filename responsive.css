@@ -1,0 +1,117 @@
+/* Estilos para smartphones en modo vertical */
+@media only screen and (max-width: 480px) {
+    .pParrafo{
+        font-size: 16px;
+    }
+    .sParrafo{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .tParrafo{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .cParrafo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+    .qParrafo{
+        font-size: 29px;
+        line-height: 27px;
+    }
+    .apuestaConten{
+        border: 3px solid #70C032;
+        border-radius: 14px;
+        padding: 1vw;
+        width: 51vw;
+        margin: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+    }
+    .extraLightfont{
+        font-weight: 100;
+        font-size: 15px;
+       }
+}
+
+/* Estilos para smartphones en modo horizontal */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Tus estilos aquí */
+}
+
+/* Estilos para smartphones en modo horizontal o vertical */
+@media only screen and (max-width: 767px) {
+    /* Tus estilos aquí */
+}
+
+/* Estilos para dispositivos móviles pequeños */
+@media only screen and (max-width: 320px) {
+    /* Tus estilos aquí */
+    .pParrafo{
+        font-size: 15px;
+    }
+    .sParrafo{
+        font-size: 16px;
+        line-height: 11px;
+    }
+    .tParrafo{
+        font-size: 27px;
+        line-height: 24px;
+    }
+    .cParrafo{
+        font-size: 30px;
+        line-height: 21px;
+    }
+    .qParrafo{
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .apuestaConten{
+        border: 3px solid #70C032;
+        border-radius: 14px;
+        padding: 1vw;
+        width: 58vw;
+        margin: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+    }
+    .extraLightfont{
+        font-weight: 100;
+        font-size: 15px;
+       }
+       .container{
+        background-image: url(imagenes/fondo.jpg);
+        background-size: cover;
+        color: white;
+        font-family: "averta", sans-serif;
+        padding: 33% 10%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        height: 100vh;
+        width: 80%;
+    }
+    button {
+        background: #70C032;
+        height: 8vh;
+        width: 27vw;
+        border: none;
+        border-radius: 6px;
+        font-size: 24px;
+    }
+}
+
+/* Estilos para dispositivos móviles pequeños en modo vertical */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+    /* Tus estilos aquí */
+}
+
+/* Estilos para dispositivos móviles pequeños en modo horizontal */
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    /* Tus estilos aquí */
+}
