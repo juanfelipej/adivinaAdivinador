@@ -10,6 +10,11 @@
 </head>
 
 <body class="container">
+  <div id="overlay" style="display: none;"></div>
+<div id="loading-indicator" style="display: none;">
+  <div class="spinner"></div>
+</div>
+
   <div class="contTodo">
     <h2 class="greenColor lightfont"><strong class="reduceSpace">¡</strong>Adivina<strong><br>
       
@@ -55,7 +60,13 @@
       <label class="lightfont" for="celular">Número de celular:</label>
       <input type="tel" id="celular" name="celular" required>
       <label class="lightfont" for="fecha">Fecha de nacimiento:</label>
-      <input type="date" id="fecha" name="fecha" required>
+      <div><label class="lightfont" for="dia">Día de nacimiento:</label>
+        <input type="number" id="dia" name="dia" min="1" max="31" required>
+        <label class="lightfont" for="mes">Mes de nacimiento:</label>
+        <input type="number" id="mes" name="mes" min="1" max="12" required>
+        <label class="lightfont" for="anio">Año de nacimiento:</label>
+        <input type="number" id="anio" name="anio" min="1900" max="2100" required>
+        </div>
       <div id="cbTratamiento">
         <input type="checkbox" id="autorizacion" name="autorizacion" required>
         <label for="autorizacion">Autorizo a que mis datos se utilicen UNICAMENTE para contactarme y decirme si gané o no

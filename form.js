@@ -1,17 +1,40 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwhN7rhMwCp341L7JDe2BvTvH3joBQR9QWGmrEohbOrLELHe-6DOgPgfCZDpBvBs9aHJA/exec';
 
 const form = document.forms['contact-form'];
+const overlay = document.getElementById('overlay');
+const loadingIndicator = document.getElementById('loading-indicator');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+  const dia = form.elements['dia'].value.padStart(2, '0');
+  const mes = form.elements['mes'].value.padStart(2, '0');
+  const anio = form.elements['anio'].value;
+
+  const fecha = `${anio}-${mes}-${dia}`;
+
+  const formData = new FormData(form);
+  formData.set('fecha', fecha);
+
+  // Obtener la fecha actual en el formato deseado (aaaa-mm-dd)
+  const fechaActual = new Date();
+  const fechaActualFormateada = `${fechaActual.getFullYear()}-${(fechaActual.getMonth() + 1).toString().padStart(2, '0')}-${fechaActual.getDate().toString().padStart(2, '0')}`;
+  formData.set('fecha_actual', fechaActualFormateada);
+
+  overlay.style.display = 'block';
+  loadingIndicator.style.display = 'block';
+
+  fetch(scriptURL, { method: 'POST', body: formData})
   .then(response => {
     if (response.ok) {
-      alert("Thank you! Your form is submitted successfully.");
-      window.location.href = 'https://juanfelipej.github.io/adivinaAdivinador/confirmacion.html'; // Redirige a la página de confirmación
+      window.location.href = 'https://juanfelipej.github.io/adivinaAdivinador/confirmacion.html';
     } else {
       throw new Error('Network response was not ok.');
     }
   })
-  .catch(error => console.error('Error!', error.message));
+  .catch(error => console.error('Error!', error.message))
+  .finally(() => {
+    overlay.style.display = 'none';
+    loadingIndicator.style.display = 'none';
+  });
 });
