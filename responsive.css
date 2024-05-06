@@ -34,6 +34,10 @@
         font-weight: 100;
         font-size: 15px;
        }
+       h2 {
+        font-size: 51px;
+        line-height: 89%;
+    }
 }
 
 /* Estilos para smartphones en modo horizontal */
@@ -49,6 +53,10 @@
 /* Estilos para dispositivos móviles pequeños */
 @media only screen and (max-width: 320px) {
     /* Tus estilos aquí */
+    h2 {
+        font-size: 51px;
+        line-height: 89%;
+    }
     .pParrafo{
         font-size: 17px;
     }
