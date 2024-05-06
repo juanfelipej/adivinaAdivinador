@@ -50,23 +50,27 @@
 @media only screen and (max-width: 320px) {
     /* Tus estilos aquí */
     .pParrafo{
-        font-size: 15px;
+        font-size: 17px;
     }
     .sParrafo{
-        font-size: 16px;
-        line-height: 11px;
+        font-size: 18.5px;
+        line-height: 23px;
     }
     .tParrafo{
-        font-size: 27px;
-        line-height: 24px;
+        font-size: 31px;
+        line-height: 20px;
     }
     .cParrafo{
-        font-size: 30px;
-        line-height: 21px;
+        font-size: 35px;
+        line-height: 39px;
     }
     .qParrafo{
-        font-size: 26px;
-        line-height: 28px;
+        font-size: 30px;
+        line-height: 17px;
+    }
+    h2 {
+        font-size: 52px;
+        line-height: 89%;
     }
     .apuestaConten{
         border: 3px solid #70C032;
