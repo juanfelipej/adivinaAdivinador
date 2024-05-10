@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwhN7rhMwCp341L7JDe2BvTvH3joBQR9QWGmrEohbOrLELHe-6DOgPgfCZDpBvBs9aHJA/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz0jRkpBdGfh671Z0V4HCm3seBU8yYZT0mXzNK3eIu_VIgQs9k3Xhoamaf8AsN0w39YlQ/exec';
 
 const form = document.forms['contact-form'];
 const overlay = document.getElementById('overlay');

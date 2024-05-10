@@ -46,8 +46,63 @@
 }
 
 /* Estilos para smartphones en modo horizontal o vertical */
-@media only screen and (max-width: 767px) {
-    /* Tus estilos aquí */
+@media only screen and (min-width: 767px) {
+    .extraLightfont {
+        font-weight: 100;
+        width: 81%;
+    }
+    button {
+        background: #70C032;
+        height: 4vh;
+        width: 8vw;
+        border: none;
+        border-radius: 6px;
+        font-size: 24px;
+    }
+    .apuestaConten {
+    border: 3px solid #70C032;
+    border-radius: 14px;
+    padding: 1vw;
+    width: 19vw;
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+}
+.container{
+    background-image: url(imagenes/bgpc.jpg);
+    background-size: cover;
+    color: white;
+    font-family: "averta", sans-serif;
+    padding: 0px 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    width: 80%;
+    background-position: 0 45%;
+}
+.contTodo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 30%;
+    margin-left: 11%;
+}
+    .apuestaConten {
+    border: 3px solid #70C032;
+    border-radius: 14px;
+    padding: 1vw;
+    width: 10vw;
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+}
 }
 
 /* Estilos para dispositivos móviles pequeños */
@@ -91,6 +146,10 @@
         align-content: center;
         align-items: flex-start;
     }
+    .extraLightfont {
+    font-weight: 100;
+    width: 81%;
+}
     .extraLightfont{
         font-weight: 100;
         font-size: 15px;
