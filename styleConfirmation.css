@@ -19,3 +19,11 @@ p{
     text-align: center;
     font-size: 20px;
 }
+button {
+    background: #70C032;
+    height: 4vh;
+    width: 24vw;
+    border: none;
+    border-radius: 6px;
+    font-size: 24px;
+}
