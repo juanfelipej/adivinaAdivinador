@@ -16,6 +16,11 @@
     height: 100vh;
     width: 80%;
 }
+h2.greenColor.lightfont strong.reduceSpace {
+    padding-left: 5px; /* ajusta según sea necesario */
+}
+
+
 .txtCenter{
     text-align: center;
 }
@@ -25,6 +30,7 @@
 
 .lightfont{
  font-weight: 300;
+ margin-top: 4%;
 }
 .extraLightfont{
     font-weight: 100;
