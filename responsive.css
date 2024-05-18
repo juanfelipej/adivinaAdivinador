@@ -63,11 +63,44 @@
     border: 3px solid #70C032;
     border-radius: 14px;
     padding: 1vw;
-    width: 19vw;
+    width: 11vw;
     margin: 2vh;
     display: flex;
     flex-direction: column;
     align-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 333px;
+}
+#cbTratamiento {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
     align-items: flex-start;
+    font-size: 11px;
+    margin: 6px;
+}button {
+    background: #70C032;
+    width: 12vw;
+    height: auto;
+}
+.apuestaConten {
+    border: 3px solid #70C032;
+    border-radius: 14px;
+    padding: 11px;
+    width: 20vw;
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.container{
+    background-image: url(imagenes/bgpc.jpg);
 }
 }

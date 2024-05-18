@@ -21,9 +21,9 @@ p{
 }
 button {
     background: #70C032;
-    height: 4vh;
-    width: 24vw;
+    width: 54vw;
     border: none;
     border-radius: 6px;
     font-size: 24px;
+    margin: 15px;
 }

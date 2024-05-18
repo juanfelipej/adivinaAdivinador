@@ -11,63 +11,94 @@
 
 <body class="container">
   <div id="overlay" style="display: none;"></div>
-<div id="loading-indicator" style="display: none;">
-  <div class="spinner"></div>
-</div>
+  <div id="loading-indicator" style="display: none;">
+      <div class="spinner"></div>
+  </div>
 
   <div class="contTodo">
-    <h2 class="greenColor lightfont"><strong class="reduceSpace">¡</strong>Queremos<strong class="increaseSpace"><br>
-      
-        Escucharte!</strong> </h2>
+      <h2 class="greenColor lightfont">
+          <strong class="reduceSpace">¡</strong>Queremos<strong class="increaseSpace"><br>
+              Escucharte!</strong>
+      </h2>
 
-    <div class="textParrafo">
-      <span class="extraLightfont ">Vamos a traer más diversión a la ciudad  </span>
-      
-
-      <img src="imagenes/wonder.png" alt="" style="
-    width: 250px;
-">
-
-      
-    </div>
-    <form
-      action=""
-      method="post"
-      name="contact-form"
-      >
-
-      <div class="apuestaConten">
-        
-      <p class="extraLightfont">Cuentanos qué le hace falta a Cali en términos de diversión. </p>
-      <input type="text" id="apuesta" name="apuesta" required>
+      <div class="textParrafo">
+          <span class="extraLightfont ">Vamos a traer más diversión a la ciudad  </span>
+          <img src="imagenes/wonder.png" alt="" style="width: 250px;">
       </div>
 
-      <p class="pParrafo txtCenter">Si quieres ser pionero en la diversión, inscríbete y te regalaremos un bono de <strong>$20.000</strong> para que uses en nuestro portal.</p>
-      <label class="lightfont" for="nombre">Nombre y apellidos:</label>
-      <input type="text" id="nombre" name="nombre" required>
-      <label class="lightfont" for="cedula">Cédula:</label>
-      <input type="email" id="correo" name="correo" required>
-      <label class="lightfont" for="celular">Número de celular:</label>
-      <input type="tel" id="celular" name="celular" required>
-      <label class="lightfont" for="fecha">Fecha de nacimiento:</label>
-      <div><label class="lightfont" for="dia">Día:</label>
-        <input type="number" id="dia" name="dia" min="1" max="31" required>
-        <label class="lightfont" for="mes">Mes:</label>
-        <input type="number" id="mes" name="mes" min="1" max="12" required>
-        <label class="lightfont" for="anio">Año:</label>
-        <input type="number" id="anio" name="anio" min="1900" max="2100" required>
-        </div>
-      <div id="cbTratamiento">
-        <input type="checkbox" id="autorizacion" name="autorizacion" required>
-        <label for="autorizacion" style="
-    margin-left: 1vw;
-">Autorizo a la utilización de los datos para recibir el bono.</label>
-      </div>
-      
-      <button type="submit">Enviar</button>
-    </form>
+      <form action="" method="post" name="contact-form">
+          <div class="apuestaConten">
+              <p class="extraLightfont">Cuentanos qué le hace falta a Cali en términos de diversión. </p>
+              <select name="apuesta" id="apuesta">
+                <option value="Karaoke">Karaoke</option>
+                <option value="Bolera">Bolera</option>
+                <option value="Arcade 80's">Arcade 80's</option>
+                <option value="e Sports">e Sports</option>
+                <option value="e Gaming">e Gaming</option>
+                <option value="Space Jump">Space Jump</option>
+                <option value="Salón de la furia">Salón de la furia</option>
+                <option value="Photo Room">Photo Room</option>
+                <option value="WOK">WOK</option>
+                <option value="Discoteca">Discoteca</option>
+                <option value="Restaurante">Restaurante</option>
+                <option value="Pista de Patinaje">Pista de Patinaje</option>
+                <option value="Zona de Realidad Virtual">Zona de Realidad Virtual</option>
+                <option value="Sala de Billar">Sala de Billar</option>
+                <!-- Agrega más opciones aquí -->
+                  <option value="Otro">Otro</option>
+              </select>
+              <div id="otroDiv" style="display:none;">
+                  <label for="otroInput">Cuál:</label>
+                  <input type="text" id="otroInput" name="otroInput">
+              </div>
+          </div>
+
+          <p class="pParrafo txtCenter">Si quieres ser pionero en la diversión, inscríbete y te regalaremos un bono de <strong>$20.000</strong> para que uses en nuestro portal.</p>
+          <label class="lightfont" for="nombre">Nombre y apellidos:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label class="lightfont" for="cedula">Cédula:</label>
+          <input type="text" id="cedula" name="cedula" required>
+          <label class="lightfont" for="celular">Número de celular:</label>
+          <input type="tel" id="celular" name="celular" required>
+          <label class="lightfont" for="fecha">Fecha de nacimiento:</label>
+          <div>
+              <label class="lightfont" for="dia">Día:</label>
+              <input type="number" id="dia" name="dia" min="1" max="31" required>
+              <label class="lightfont" for="mes">Mes:</label>
+              <input type="number" id="mes" name="mes" min="1" max="12" required>
+              <label class="lightfont" for="anio">Año:</label>
+              <input type="number" id="anio" name="anio" min="1900" max="2100" required>
+          </div>
+          <div id="cbTratamiento">
+              <input type="checkbox" id="autorizacion" name="autorizacion" required>
+              <label for="autorizacion" style="margin-left: 1vw;">Autorizo a la utilización de los datos para recibir el bono.</label>
+          </div>
+
+          <button type="submit">Enviar</button>
+      </form>
   </div>
   <script src="form.js"></script>
+  <script>
+    function checkOther(select) {
+        var otroDiv = document.getElementById("otroDiv");
+        if (select.value === "Otro") {
+            otroDiv.style.display = "flex";
+            otroDiv.style.flexDirection = "column";
+            otroDiv.style.alignContent = "center";
+        } else {
+            otroDiv.style.display = "none";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var select = document.getElementById("apuesta");
+        select.addEventListener("change", function() {
+            checkOther(this);
+        });
+    });
+</script>
+
 </body>
+
 
 </html>

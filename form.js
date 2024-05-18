@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz0jRkpBdGfh671Z0V4HCm3seBU8yYZT0mXzNK3eIu_VIgQs9k3Xhoamaf8AsN0w39YlQ/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxZZxgqYxUYp7lK3fk34Yo4WQ7AGb5PzO-me0qcsV-Jzk3T9MiBWRRQGY2kzGorKRlpYQ/exec';
 
 const form = document.forms['contact-form'];
 const overlay = document.getElementById('overlay');
@@ -10,11 +10,20 @@ form.addEventListener('submit', e => {
   const dia = form.elements['dia'].value.padStart(2, '0');
   const mes = form.elements['mes'].value.padStart(2, '0');
   const anio = form.elements['anio'].value;
+  const otro = form.elements['otroInput'].value; 
 
   const fecha = `${anio}-${mes}-${dia}`;
 
   const formData = new FormData(form);
   formData.set('fecha', fecha);
+
+  const apuesta = formData.get('apuesta');
+
+  if(apuesta==="Otro"){
+    formData.set('apuesta', otro);
+  }
+
+  
 
   // Obtener la fecha actual en el formato deseado (aaaa-mm-dd)
   const fechaActual = new Date();
@@ -24,6 +33,8 @@ form.addEventListener('submit', e => {
   overlay.style.display = 'block';
   loadingIndicator.style.display = 'block';
 
+
+  
   fetch(scriptURL, { method: 'POST', body: formData})
   .then(response => {
     if (response.ok) {
