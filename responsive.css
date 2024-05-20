@@ -32,11 +32,16 @@
     }
     .extraLightfont{
         font-weight: 100;
-        font-size: 15px;
+        font-size: 14px;
+        text-align: center;
        }
        h2 {
         font-size: 51px;
         line-height: 89%;
+    }
+    .popup{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -50,6 +55,7 @@
     .extraLightfont {
         font-weight: 100;
         width: 81%;
+        text-align: center;
     }
     button {
         background: #70C032;
@@ -93,7 +99,7 @@ form {
     border: 3px solid #70C032;
     border-radius: 14px;
     padding: 11px;
-    width: 20vw;
+    width: 16vw;
     margin: 2vh;
     display: flex;
     flex-direction: column;
@@ -103,4 +109,15 @@ form {
 .container{
     background-image: url(imagenes/bgpc.jpg);
 }
+.spanSlogan{
+    width: 100%;
+}
+.mayorEdad{
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 }

@@ -8,14 +8,13 @@
     background-size: cover;
     color: white;
     font-family: "averta", sans-serif;
-    padding: 0px 10% 0 10%;
+    padding: 73px 10% 18px 10%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    height: 90%;
+    height: 92%;
     width: 80%;
-    padding: 10%;
 }
 h2.greenColor.lightfont strong.reduceSpace {
     padding-left: 5px; /* ajusta según sea necesario */
@@ -131,13 +130,23 @@ align-content: center;
 
 align-items: center;
 }
-.interrogante{
+#interrogante{
     vertical-align: 13px;
+}
+#otroinput{
+    margin: 1px;
 }
 #apuesta{
     background: #D9D9D9;
     border-radius: 5px;
     padding: 1px;
+    margin: 8px;
+}
+body{
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input{
@@ -145,6 +154,8 @@ input{
     border: none;
     border-radius: 6px;
     background: #efefef;
+    margin-top: 3px;
+    text-align: center;
 }
 #cbTratamiento{
     display: flex;
@@ -156,13 +167,64 @@ input{
 }
 button{
     background: #70C032;
-     height: 4vh;
+    height: 4vh;
     width: 24vw;
     border:none;
-border-radius: 6px;
+    border-radius: 6px;
     font-size:24px;
-    
+    margin: 13PX;
 }
 button:hover {
     background: #61a32e;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    color: black;
+    text-align: center;
+    font-size: 21px;
+    display: flex;
+}
+
+
+/* Estilos para el botón */
+#reload-page {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para la opacidad de fondo */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidad del 50% */
+    z-index: 999; /* Z-index para asegurar que esté detrás del popup */
+}
+.noneDisplay{
+    display: none;
+}
+#age-error>img{
+        width: 200px;
+}
+
+.mayorEdad{
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }

@@ -2,102 +2,120 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de Adivinanza</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Adivinanza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body class="container">
-  <div id="overlay" style="display: none;"></div>
-  <div id="loading-indicator" style="display: none;">
-      <div class="spinner"></div>
-  </div>
+    <div id="overlay" style="display: none;"></div>
+    <div id="loading-indicator" style="display: none;">
+        <div class="spinner"></div>
+    </div>
 
-  <div class="contTodo">
-      <h2 class="greenColor lightfont">
-          <strong class="reduceSpace"><span id="interrogante">¡</span></strong>Queremos<strong class="increaseSpace"><br>
-              Escucharte!</strong>
-      </h2>
+    <div class="contTodo">
+        <h2 class="greenColor lightfont">
+            <strong class="reduceSpace"><span id="interrogante">¡</span></strong>Queremos<strong
+                class="increaseSpace"><br>
+                escucharte!</strong>
+        </h2>
 
-      <div class="textParrafo">
-          <span class="extraLightfont ">Vamos a traer más diversión a la ciudad  </span>
-          <img src="imagenes/wonder.png" alt="" style="width: 250px;">
-      </div>
+        <div class="textParrafo">
+            <span class="spanSlogan extraLightfont ">Vamos a traer más diversión a la ciudad. </span>
+            <img src="imagenes/wonder.png" alt="" style="width: 250px;">
+        </div>
 
-      <form action="" method="post" name="contact-form">
-          <div class="apuestaConten">
-              <p class="extraLightfont">Cuentanos qué le hace falta a Cali en términos de diversión. </p>
-              <select name="apuesta" id="apuesta">
-                <option value="Karaoke">Karaoke</option>
-                <option value="Bolera">Bolera</option>
-                <option value="Arcade 80's">Arcade 80's</option>
-                <option value="e Sports">e Sports</option>
-                <option value="e Gaming">e Gaming</option>
-                <option value="Space Jump">Space Jump</option>
-                <option value="Salón de la furia">Salón de la furia</option>
-                <option value="Photo Room">Photo Room</option>
-                <option value="WOK">WOK</option>
-                <option value="Discoteca">Discoteca</option>
-                <option value="Restaurante">Restaurante</option>
-                <option value="Pista de Patinaje">Pista de Patinaje</option>
-                <option value="Zona de Realidad Virtual">Zona de Realidad Virtual</option>
-                <option value="Sala de Billar">Sala de Billar</option>
-                <!-- Agrega más opciones aquí -->
-                  <option value="Otro">Otro</option>
-              </select>
-              <div id="otroDiv" style="display:none;">
-                  <label for="otroInput">Cuál:</label>
-                  <input type="text" id="otroInput" name="otroInput">
-              </div>
-          </div>
+        <form action="" method="post" name="contact-form">
+            <div class="apuestaConten">
+                <p class="extraLightfont">¿Cuéntanos qué le hace falta a Cali en términos de diversión?</p>
+                <select name="apuesta" id="apuesta">
+                    <option value="Karaoke">Karaoke</option>
+                    <option value="Bolera">Bolera</option>
+                    <option value="Arcade 80's">Arcade 80's</option>
+                    <option value="e Sports">e Sports</option>
+                    <option value="e Gaming">e Gaming</option>
+                    <option value="Space Jump">Space Jump</option>
+                    <option value="Salón de la furia">Salón de la furia</option>
+                    <option value="Photo Room">Photo Room</option>
+                    <option value="WOK">WOK</option>
+                    <option value="Discoteca">Discoteca</option>
+                    <option value="Restaurante">Restaurante</option>
+                    <option value="Pista de Patinaje">Pista de Patinaje</option>
+                    <option value="Zona de Realidad Virtual">Zona de Realidad Virtual</option>
+                    <option value="Sala de Billar">Sala de Billar</option>
+                    <!-- Agrega más opciones aquí -->
+                    <option value="Otro">Otro</option>
+                </select>
+                <div id="otroDiv" style="display: none;">
+                    <label for="otroInput" style="
+  font-weight: 200;
+  text-align: center;
+">¿Cuál?</label>
+                    <input type="text" id="otroInput" name="otroInput">
+                </div>
+            </div>
 
-          <p class="pParrafo txtCenter">Si quieres ser pionero en la diversión, inscríbete y te regalaremos un bono de <strong>$20.000</strong> para que uses en nuestro portal.</p>
-          <label class="lightfont" for="nombre">Nombre y apellidos:</label>
-          <input type="text" id="nombre" name="nombre" required>
-          <label class="lightfont" for="cedula">Cédula:</label>
-          <input type="text" id="cedula" name="cedula" required>
-          <label class="lightfont" for="celular">Número de celular:</label>
-          <input type="tel" id="celular" name="celular" required>
-          <label class="lightfont" for="fecha">Fecha de nacimiento:</label>
-          <div>
-              <label class="lightfont" for="dia">Día:</label>
-              <input type="number" id="dia" name="dia" min="1" max="31" required>
-              <label class="lightfont" for="mes">Mes:</label>
-              <input type="number" id="mes" name="mes" min="1" max="12" required>
-              <label class="lightfont" for="anio">Año:</label>
-              <input type="number" id="anio" name="anio" min="1900" max="2100" required>
-          </div>
-          <div id="cbTratamiento">
-              <input type="checkbox" id="autorizacion" name="autorizacion" required>
-              <label for="autorizacion" style="margin-left: 1vw;">Autorizo a la utilización de los datos para recibir el bono.</label>
-          </div>
+            <p class="pParrafo txtCenter">Si quieres ser pionero en la diversión, inscríbete y te regalaremos un bono de
+                <strong>$20.000</strong> para que uses en nuestro portal.
+            </p>
+            <label class="lightfont" for="nombre">Nombre y apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label class="lightfont" for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+            <label class="lightfont" for="celular">Número de celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+            <label class="lightfont" for="fecha">Fecha de nacimiento:</label>
+            <div>
+                <label class="lightfont" for="dia">Día:</label>
+                <input type="number" id="dia" name="dia" min="1" max="31" required>
+                <label class="lightfont" for="mes">Mes:</label>
+                <input type="number" id="mes" name="mes" min="1" max="12" required>
+                <label class="lightfont" for="anio">Año:</label>
+                <input type="number" id="anio" name="anio" min="1900" max="2100" required>
+            </div>
+            <div id="cbTratamiento">
+                <input type="checkbox" id="autorizacion" name="autorizacion" style="margin-top: -5px;" required="">
+                <label for="autorizacion" style="margin-left: 7px;">Autorizo a la utilización de los datos para recibir
+                    el bono.</label>
+            </div>
 
-          <button type="submit">Enviar</button>
-      </form>
-  </div>
-  <script src="form.js"></script>
-  <script>
-    function checkOther(select) {
-        var otroDiv = document.getElementById("otroDiv");
-        if (select.value === "Otro") {
-            otroDiv.style.display = "flex";
-            otroDiv.style.flexDirection = "column";
-            otroDiv.style.alignContent = "center";
-        } else {
-            otroDiv.style.display = "none";
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div id="opacidad" class="noneDisplay"></div> <!-- Div para la opacidad detrás del popup -->
+
+    <div id="age-error" class="noneDisplay">
+        <img src="imagenes/21+logo.png" alt="logo mayores de 21">
+    <div class="mayorEdad">
+        <p>Lo sentimos, solo pueden participar mayores de 21 años.</p>
+        
+        <button id="reload-page">Aceptar</button>
+    </div></div>
+
+
+    <script>
+        function checkOther(select) {
+            var otroDiv = document.getElementById("otroDiv");
+            if (select.value === "Otro") {
+                otroDiv.style.display = "flex";
+                otroDiv.style.flexDirection = "column";
+                otroDiv.style.alignContent = "center";
+            } else {
+                otroDiv.style.display = "none";
+            }
         }
-    }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        var select = document.getElementById("apuesta");
-        select.addEventListener("change", function() {
-            checkOther(this);
+        document.addEventListener("DOMContentLoaded", function () {
+            var select = document.getElementById("apuesta");
+            select.addEventListener("change", function () {
+                checkOther(this);
+            });
         });
-    });
-</script>
-
+    </script>
+    <script src="validacion.js"></script>
+    <script src="form.js"></script>
 </body>
 
 
