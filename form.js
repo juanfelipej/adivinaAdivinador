@@ -51,7 +51,7 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { method: 'POST', body: formData})
     .then(response => {
       if (response.ok) {
-        window.location.href = 'https://juanfelipej.github.io/adivinaAdivinador/confirmacion.html';
+        window.location.href = 'https://easyguess.com/confirmacion.html';
       } else {
         throw new Error('Network response was not ok.');
       }

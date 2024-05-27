@@ -228,3 +228,6 @@ button:hover {
     justify-content: space-around;
     align-items: center;
 }
+.inside-article{
+    font-family: "averta", sans-serif;
+}

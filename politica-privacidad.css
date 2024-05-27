@@ -1,0 +1,47 @@
+.inside-article{
+    padding: 9vw 7vw;
+    background-color: #F2F2F2;
+}
+.wp-block-heading-h1{
+    font-size: 56px;
+}
+.ol-contenido{
+    margin-top: 4vh;
+
+}
+.entry-content{
+    PADDING: 12%;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 1px 4px 9px 7px #0000001c;
+}
+.enlaces{
+    color: blue !important;
+    font-size: 10px;
+    padding: 0;
+}
+*{
+    margin: 0;
+    font-size: 12px;
+    text-align: justify;
+}
+@media only screen and (max-width: 400px){
+    .wp-block-heading-h1 {
+        font-size: 31px;
+    }
+    .inside-article {
+        padding: 22vw 7vw;
+        background-color: #F2F2F2;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .wp-block-heading-h1 {
+        font-size: 31px;
+    }
+    .inside-article {
+        /* padding: 22vw 7vw; */
+        /* background-color: #F2F2F2; */
+    }
+    
+}

@@ -1,7 +1,7 @@
 /* Estilos para smartphones en modo vertical */
 @media only screen and (max-width: 480px) {
     .pParrafo{
-        font-size: 16px;
+        font-size: 15px;
     }
     .sParrafo{
         font-size: 18px;
@@ -47,7 +47,7 @@
 
 /* Estilos para smartphones en modo horizontal */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-    /* Tus estilos aquí */
+    /* Tus estilos aquÃ­ */
 }
 
 /* Estilos para smartphones en modo horizontal o vertical */
